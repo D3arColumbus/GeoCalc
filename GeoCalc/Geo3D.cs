@@ -8,8 +8,13 @@ namespace GeoCalc
 {
     public class Geo3D : Geo
     {
-        public override int GerArea() => throw new NotImplementedException();
+        public Geo3D(String description) : base(description)
+        {
+
+        }
+
+        public override int GetArea() => throw new NotImplementedException();
         public override int GetCircumference() => throw new NotImplementedException();
-        public override void Println() => throw new NotImplementedException();
+        public override String Println() => throw new NotImplementedException();
     }
 }

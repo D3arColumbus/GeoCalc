@@ -10,6 +10,9 @@ namespace GeoCalc
     {
         public static void Main(string[] args)
         {
+            Point point = new Point(10, 10);
+            Console.WriteLine(point.GetDistance(new Point(5, 5)));
+
         }
     }
 }

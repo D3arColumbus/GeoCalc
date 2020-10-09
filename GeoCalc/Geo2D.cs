@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace GeoCalc
 {
-    public class Geo2D : Geo
+    public abstract class Geo2D : Geo
     {
+        protected Point P1 { get; set; }
+        protected Point P2 { get; set; }
 
 
-        public override int GerArea() => throw new NotImplementedException();
-        public override int GetCircumference() => throw new NotImplementedException();
-        public override void Println() => throw new NotImplementedException();
+
+        protected Geo2D(String d, Point p1, Point p2) : base(d)
+        {
+            P1 = p1;
+            P2 = p2;
+        }
+
     }
 }
