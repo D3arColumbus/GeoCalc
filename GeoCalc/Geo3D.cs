@@ -6,15 +6,27 @@ using System.Threading.Tasks;
 
 namespace GeoCalc
 {
-    public class Geo3D : Geo
+    public abstract class Geo3D : Geo
     {
-        public Geo3D(String description) : base(description)
+        public int Height { set; get; }
+        private Geo2D baseFigure;
+        public Geo2D BaseFigure
         {
-
+            set
+            {
+                baseFigure = value; 
+            }
+            get
+            {
+                return baseFigure;
+            }
+        }
+        public Geo3D(String description, Geo2D baseFigure, int height) : base(description)
+        {
+            BaseFigure = baseFigure;
+            Height = height;
         }
 
-        public override int GetArea() => throw new NotImplementedException();
-        public override int GetCircumference() => throw new NotImplementedException();
-        public override String Println() => throw new NotImplementedException();
+
     }
 }

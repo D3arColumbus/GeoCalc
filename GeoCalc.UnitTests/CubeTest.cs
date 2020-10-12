@@ -1,37 +1,37 @@
 ﻿using System;
-using System.Text;
-using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using GeoCalc;
 
 namespace GeoCalc.UnitTests
 {
     [TestClass]
-    public class TriangleTest
+    public class CubeTest
     {
-        Triangle triangle;
+        Cylinder cube;
 
         [TestInitialize]
         public void setup()
         {
-            triangle = new Triangle("Triangle", new Point(0, 0), new Point(0, 10));
+            cube = new Cylinder("Cube", new Square("Square", new Point(0, 0), new Point(0, 10)), 10);
         }
 
         [TestMethod]
         public void getArea_ReturnsCorrectValue()
         {
-            Assert.AreEqual(43, triangle.GetArea());
+            Assert.AreEqual(1000, cube.GetArea());
         }
 
         [TestMethod]
         public void getCircumference_ReturnsCorrectValue()
         {
-            Assert.AreEqual(30, triangle.GetCircumference());
+            Assert.AreEqual(40, cube.GetCircumference());
         }
 
         [TestMethod]
         public void PrintLnReturnsCorrectValue()
         {
-            Assert.AreEqual("Triangle 43 30", triangle.Println());
+            Assert.AreEqual("Cube 1000 40", cube.Println());
         }
     }
+
 }

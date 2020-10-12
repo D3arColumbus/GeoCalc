@@ -14,6 +14,6 @@ namespace GeoCalc
         }
 
         public override int GetArea() => (int)((Math.Sqrt(3) / 4) * P1.GetDistance(P2) * P1.GetDistance(P2));
-        public override int GetCircumference() => throw new NotImplementedException();
+        public override int GetCircumference() => (int)P1.GetDistance(P2) * 3;
     }
 }

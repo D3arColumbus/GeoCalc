@@ -1,37 +1,35 @@
 ﻿using System;
-using System.Text;
-using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace GeoCalc.UnitTests
 {
     [TestClass]
-    public class TriangleTest
+    public class TetrahedronTest
     {
-        Triangle triangle;
+        Tetrahedron tetrahedron;
 
         [TestInitialize]
         public void setup()
         {
-            triangle = new Triangle("Triangle", new Point(0, 0), new Point(0, 10));
+            tetrahedron = new Tetrahedron("Tetrahedron", new Triangle("Square", new Point(0, 0), new Point(0, 10)), 10);
         }
 
         [TestMethod]
         public void getArea_ReturnsCorrectValue()
         {
-            Assert.AreEqual(43, triangle.GetArea());
+            Assert.AreEqual(143, tetrahedron.GetArea());
         }
 
         [TestMethod]
         public void getCircumference_ReturnsCorrectValue()
         {
-            Assert.AreEqual(30, triangle.GetCircumference());
+            Assert.AreEqual(30, tetrahedron.GetCircumference());
         }
 
         [TestMethod]
         public void PrintLnReturnsCorrectValue()
         {
-            Assert.AreEqual("Triangle 43 30", triangle.Println());
+            Assert.AreEqual("Tetrahedron 143 30", tetrahedron.Println());
         }
     }
 }
