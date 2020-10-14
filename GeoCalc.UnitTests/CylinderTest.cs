@@ -18,7 +18,7 @@ namespace GeoCalc.UnitTests
         [TestMethod]
         public void getArea_ReturnsCorrectValue()
         {
-            Assert.AreEqual(3140, cylinder.GetArea());
+            Assert.AreEqual(314, cylinder.GetArea());
         }
 
         [TestMethod]
@@ -28,10 +28,24 @@ namespace GeoCalc.UnitTests
         }
 
         [TestMethod]
+        public void GetVolumenReturnsCorrectValue()
+        {
+            Assert.AreEqual(3140, cylinder.GetVolume());
+
+        }
+
+        [TestMethod]
+        public void GetSurfaceAreaReturnsCorrectValue()
+        {
+            Assert.AreEqual(1248, cylinder.GetSurfaceArea());
+
+        }
+
+
+        [TestMethod]
         public void PrintLnReturnsCorrectValue()
         {
-            Assert.AreEqual("Cylinder 3140 62", cylinder.Println());
+            Assert.AreEqual("Cylinder 314 62", cylinder.Println());
         }
     }
-
 }

@@ -7,18 +7,18 @@ namespace GeoCalc.UnitTests
     [TestClass]
     public class CubeTest
     {
-        Cylinder cube;
+        Cube cube;
 
         [TestInitialize]
         public void setup()
         {
-            cube = new Cylinder("Cube", new Square("Square", new Point(0, 0), new Point(0, 10)), 10);
+            cube = new Cube("Cube", new Square("Square", new Point(0, 0), new Point(0, 10)), 10);
         }
 
         [TestMethod]
         public void getArea_ReturnsCorrectValue()
         {
-            Assert.AreEqual(1000, cube.GetArea());
+            Assert.AreEqual(100, cube.GetArea());
         }
 
         [TestMethod]
@@ -30,7 +30,19 @@ namespace GeoCalc.UnitTests
         [TestMethod]
         public void PrintLnReturnsCorrectValue()
         {
-            Assert.AreEqual("Cube 1000 40", cube.Println());
+            Assert.AreEqual("Cube 100 40", cube.Println());
+        }
+
+        [TestMethod]
+        public void GetVolumenReturnsCorrectValue()
+        {
+            Assert.AreEqual(1000, cube.GetVolume());
+        }
+
+        [TestMethod]
+        public void GetSurfaceAreaReturnsCorrectValue()
+        {
+            Assert.AreEqual(600, cube.GetSurfaceArea());
         }
     }
 

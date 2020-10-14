@@ -8,18 +8,50 @@ namespace GeoCalc
 {
     public class GeoArray
     {
-        public int Length { get; }
+        private Geo[] array;
 
         public GeoArray()
         {
-            Length = 10;
+            array = new Geo[10];
         }
 
         public GeoArray(int length)
         {
-            Length = length;
+            array = new Geo[length];
         }
 
-        public void insert(Square square) => throw new NotImplementedException();
+        public Geo this[int i]
+        {
+            get { return array[i]; }
+            set { array[i] = value; }
+        }
+
+        public void Println()
+        {
+            for(int i = 0; i < array.Length; i++)
+            {
+                if (array[i] != null)
+                    array[i].Println();
+            }
+        }
+
+        public void Println(String name)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] != null && array[i].Description.Equals(name))
+                    array[i].Println();
+            }
+        }
+
+        public void ReadFrom(String path)
+        {
+
+        }
+
+        public void WriteInto(String path)
+        {
+
+        }
     }
 }

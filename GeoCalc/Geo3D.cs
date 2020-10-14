@@ -27,6 +27,15 @@ namespace GeoCalc
             Height = height;
         }
 
+        public override int GetArea() => BaseFigure.GetArea();
+
+        public override int GetCircumference() => BaseFigure.GetCircumference();
+
+        public virtual int GetVolume() => BaseFigure.GetArea() * Height;
+
+        public virtual int GetSurfaceArea() => BaseFigure.GetArea() * 2 + BaseFigure.GetCircumference() * Height;
+
+
 
     }
 }

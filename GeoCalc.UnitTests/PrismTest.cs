@@ -18,7 +18,7 @@ namespace GeoCalc.UnitTests
 
         public void getArea_ReturnsCorrectValue()
         {
-            Assert.AreEqual(430, prism.GetArea());
+            Assert.AreEqual(43, prism.GetArea());
         }
 
         [TestMethod]
@@ -28,9 +28,22 @@ namespace GeoCalc.UnitTests
         }
 
         [TestMethod]
+        public void GetVolumenReturnsCorrectValue()
+        {
+            Assert.AreEqual(430, prism.GetVolume());
+        }
+
+        [TestMethod]
+        public void GetSurfaceAreaReturnsCorrectValue()
+        {
+            Assert.AreEqual(386, prism.GetSurfaceArea());
+        }
+   
+
+    [TestMethod]
         public void PrintLnReturnsCorrectValue()
         {
-            Assert.AreEqual("Prism 430 30", prism.Println());
+            Assert.AreEqual("Prism 43 30", prism.Println());
         }
     }
 }

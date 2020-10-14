@@ -17,15 +17,14 @@ namespace GeoCalc.UnitTests
         [TestMethod]
         public void CreatingNewArray_LengthIs10()
         {
-            Assert.AreEqual(array.Length, 10);
+            for(int i = 0; i < 10; i++)
+                array[i] = new Circle("Cirlce", new Point(0, 0), new Point(10, 10));
+
         }
 
-        [TestMethod]
-        public void CreateNewArrayWithCostumeLength()
-        {
-            array = new GeoArray(20);
-            Assert.AreEqual(array.Length, 20);
-        }
+
+
+
 
        
 

@@ -7,7 +7,7 @@
 
         }
 
-        public override int GetArea() => BaseFigure.GetArea() * Height;
-        public override int GetCircumference() => BaseFigure.GetCircumference();
+
+
     }
 }

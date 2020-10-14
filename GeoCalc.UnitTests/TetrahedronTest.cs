@@ -17,7 +17,7 @@ namespace GeoCalc.UnitTests
         [TestMethod]
         public void getArea_ReturnsCorrectValue()
         {
-            Assert.AreEqual(143, tetrahedron.GetArea());
+            Assert.AreEqual(43, tetrahedron.GetArea());
         }
 
         [TestMethod]
@@ -27,9 +27,22 @@ namespace GeoCalc.UnitTests
         }
 
         [TestMethod]
+        public void GetVolumenReturnsCorrectValue()
+        {
+            Assert.AreEqual(143, tetrahedron.GetVolume());
+        }
+
+        [TestMethod]
+        public void GetSurfaceAreaReturnsCorrectValue()
+        {
+            Assert.AreEqual(172, tetrahedron.GetSurfaceArea());
+        }
+  
+
+    [TestMethod]
         public void PrintLnReturnsCorrectValue()
         {
-            Assert.AreEqual("Tetrahedron 143 30", tetrahedron.Println());
+            Assert.AreEqual("Tetrahedron 43 30", tetrahedron.Println());
         }
     }
 }

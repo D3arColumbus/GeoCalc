@@ -12,7 +12,9 @@ namespace GeoCalc
         {
         }
 
-        public override int GetArea() => (int)(BaseFigure.GetArea() * Height * 0.33333333333333);
-        public override int GetCircumference() => BaseFigure.GetCircumference();
+        public override int GetVolume() => (int)(BaseFigure.GetArea() * Height * 0.33333333333333);
+
+        public override int GetSurfaceArea() => BaseFigure.GetArea() * 4;
+
     }
 }

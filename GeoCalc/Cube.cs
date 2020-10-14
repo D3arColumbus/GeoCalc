@@ -1,4 +1,6 @@
-﻿namespace GeoCalc
+﻿using System.Globalization;
+
+namespace GeoCalc
 {
     public class Cube : Geo3D
     {
@@ -7,7 +9,8 @@
 
         }
 
-        public override int GetArea() => BaseFigure.GetArea() * Height;
-        public override int GetCircumference() => BaseFigure.GetCircumference();
+
+
+
     }
 }
