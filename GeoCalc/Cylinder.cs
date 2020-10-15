@@ -1,4 +1,5 @@
-﻿namespace GeoCalc
+﻿//Dorner Christof 4CHIF
+namespace GeoCalc
 {
     public class Cylinder : Geo3D
     {

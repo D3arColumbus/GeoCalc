@@ -1,5 +1,5 @@
 ﻿using System.Globalization;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc
 {
     public class Cube : Geo3D

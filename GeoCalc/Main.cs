@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            Point point = new Point(10, 10);
-            Console.WriteLine(point.GetDistance(new Point(5, 5)));
+            GeoArray array = new GeoArray();
+            array.ReadFrom("geocalc.txt");
+            array.Println();
+            array.WriteInto("geocalcOut.txt");
 
         }
     }

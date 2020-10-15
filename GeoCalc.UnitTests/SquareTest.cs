@@ -3,12 +3,10 @@ using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Security.Cryptography;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc.UnitTests
 {
-    /// <summary>
-    /// Summary description for SquareTest
-    /// </summary>
+
     [TestClass]
     public class SquareTest
     {

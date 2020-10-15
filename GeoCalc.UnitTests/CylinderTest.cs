@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GeoCalc;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc.UnitTests
 {
     [TestClass]
@@ -45,7 +45,7 @@ namespace GeoCalc.UnitTests
         [TestMethod]
         public void PrintLnReturnsCorrectValue()
         {
-            Assert.AreEqual("Cylinder 314 62", cylinder.Println());
+            Assert.AreEqual("Cylinder 314 62 3140 1248", cylinder.Println());
         }
     }
 }

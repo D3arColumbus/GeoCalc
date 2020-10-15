@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc
 {
     public class Circle : Geo2D

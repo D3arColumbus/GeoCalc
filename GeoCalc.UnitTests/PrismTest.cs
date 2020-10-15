@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc.UnitTests
 {
     [TestClass]
@@ -43,7 +43,7 @@ namespace GeoCalc.UnitTests
     [TestMethod]
         public void PrintLnReturnsCorrectValue()
         {
-            Assert.AreEqual("Prism 43 30", prism.Println());
+            Assert.AreEqual("Prism 43 30 430 386", prism.Println());
         }
     }
 }

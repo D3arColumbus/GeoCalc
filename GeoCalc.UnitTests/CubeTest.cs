@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GeoCalc;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc.UnitTests
 {
     [TestClass]
@@ -30,7 +30,7 @@ namespace GeoCalc.UnitTests
         [TestMethod]
         public void PrintLnReturnsCorrectValue()
         {
-            Assert.AreEqual("Cube 100 40", cube.Println());
+            Assert.AreEqual("Cube 100 40 1000 600", cube.Println());
         }
 
         [TestMethod]

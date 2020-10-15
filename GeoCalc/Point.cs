@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc
 {
     public class Point
@@ -39,7 +39,7 @@ namespace GeoCalc
         {
             if (p.coordinates.Length != this.coordinates.Length)
                 throw new ArgumentOutOfRangeException("The two Points have different Dimesions!");
-            if (this.coordinates.Length > 2)
+            if (this.coordinates.Length > 3)
                 throw new ArgumentOutOfRangeException("The two Points have to many Dimensions!");
             if (this.coordinates.Length < 1)
                 throw new ArgumentOutOfRangeException("The two Points have to few Dimesions!");

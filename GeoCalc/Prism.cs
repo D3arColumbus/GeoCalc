@@ -1,5 +1,5 @@
 ﻿using System;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc
 {
     public class Prism : Geo3D

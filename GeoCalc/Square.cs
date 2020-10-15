@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc
 {
     public class Square : Geo2D

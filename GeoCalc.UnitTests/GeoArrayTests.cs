@@ -1,6 +1,6 @@
 ﻿using GeoCalc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc.UnitTests
 {
     [TestClass]

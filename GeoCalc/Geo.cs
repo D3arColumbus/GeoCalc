@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc
 {
     public abstract class Geo

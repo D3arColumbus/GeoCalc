@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+//Dorner Christof 4CHIF
 namespace GeoCalc.UnitTests
 {
     [TestClass]
@@ -29,20 +29,20 @@ namespace GeoCalc.UnitTests
         [TestMethod]
         public void GetVolumenReturnsCorrectValue()
         {
-            Assert.AreEqual(143, tetrahedron.GetVolume());
+            Assert.AreEqual(130, tetrahedron.GetVolume());
         }
 
         [TestMethod]
         public void GetSurfaceAreaReturnsCorrectValue()
         {
-            Assert.AreEqual(172, tetrahedron.GetSurfaceArea());
+            Assert.AreEqual(143, tetrahedron.GetSurfaceArea());
         }
   
 
     [TestMethod]
         public void PrintLnReturnsCorrectValue()
         {
-            Assert.AreEqual("Tetrahedron 43 30", tetrahedron.Println());
+            Assert.AreEqual("Tetrahedron 43 30 130 143", tetrahedron.Println());
         }
     }
 }
